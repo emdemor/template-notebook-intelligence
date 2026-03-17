@@ -7,6 +7,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 RUN pip install --upgrade pip && \
     pip install "jupyterlab>=4.5" notebook-intelligence
 
+RUN mkdir -p /root/.jupyter/nbi && \
+    echo '{"claude_settings":{"enabled":true,"tools":["claude-code:built-in-tools","nbi:built-in-jupyter-ui-tools"],"setting_sources":["user","project"]}}' \
+    > /root/.jupyter/nbi/config.json
+
+RUN mkdir -p /root/.claude
+
 EXPOSE 8888
 
 CMD ["jupyter", "lab", \

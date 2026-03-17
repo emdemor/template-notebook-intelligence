@@ -13,6 +13,7 @@ run:
 		--name $(CONTAINER) \
 		-p $(PORT):8888 \
 		-v $(WORK_DIR):/workspace \
+		-v ~/.claude:/root/.claude \
 		-w /workspace \
 		$(IMAGE)
 	@echo "JupyterLab disponível em http://localhost:$(PORT)"
