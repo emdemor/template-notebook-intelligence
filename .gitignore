@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Data files
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.arrow
+
+# Models
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pb
+*.joblib
+
+# Datasets / large dirs
+data/raw/
+data/processed/
+data/external/
+models/
+
+# Logs & outputs
+logs/
+*.log
+runs/
+outputs/
+mlruns/
+
+# Environment variables
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
